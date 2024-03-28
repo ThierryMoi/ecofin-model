@@ -1,0 +1,7 @@
+langchain
+llama-cpp-python
+uvicorn
+fastapi
+requests
+gdown
+sentence_transformers~=2.2.2

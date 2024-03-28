@@ -1,0 +1,29 @@
+# Ignorer les fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorer les fichiers de sauvegarde
+*~
+
+# Ignorer les fichiers d'environnement virtuel
+venv/
+ecofin/
+.env/
+
+# Ignorer les fichiers de dépendances
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Ignorer les fichiers générés par l'IDE ou l'éditeur de texte
+.vscode/
+.idea/
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de configuration spécifiques à l'utilisateur
+*.swp
