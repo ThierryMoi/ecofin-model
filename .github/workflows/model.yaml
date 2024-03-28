@@ -31,6 +31,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: ./
-        file: ./dockerfile.yaml
+        file: ./dockerfile
         push: true
         tags: noname1705/model-api-dependencies:1.0.2
