@@ -24,7 +24,7 @@ def embeddings_multilangue_large_fast_controller(texte: str):
     try:
         embedding_instance = Embedding()
         embed = embedding_instance.embeddings_multilangue_fast_embed(texte)
+        return [float(x) for x in embed]
     except Exception as e:
         logging.error(e)
-    return [float(x) for x in embed]
 app.include_router(router)

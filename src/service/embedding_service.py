@@ -16,6 +16,6 @@ class Embedding:
         embedding = MULTILANGUE_MODEL_LARGE.encode(input_texts, normalize_embeddings=True)
         return list(embedding[0])
     def embeddings_multilangue_fast_embed(self, documents):
-   
-        embedding = list(MULTILANGUE_MODEL_FAST_EMBED.embedding_model.embed(documents))
+
+        embedding = list(MULTILANGUE_MODEL_FAST_EMBED.embed(documents))
         return list(embedding[0])
