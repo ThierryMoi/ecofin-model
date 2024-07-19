@@ -7,7 +7,7 @@ on:
       
 
 jobs:
-  push_to_Docker_Hub_ecofin_model_model:
+  push_to_Docker_Hub_ecofin_model:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -58,4 +58,4 @@ jobs:
           ssh ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_IP_PREPROD }} 'cd ecofin-stack/model/preprod && docker-compose -f docker-compose.yaml pull'
           ssh ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_IP_PREPROD }} 'cd ecofin-stack/model/preprod && docker-compose --env-file .env -f docker-compose.yaml up -d'
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_ KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
