@@ -57,4 +57,4 @@ jobs:
           ssh ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_IP_DEV }} 'cd ecofin-stack/model/dev && docker-compose -f docker-compose.yaml pull'
           ssh ${{ secrets.VPS_USERNAME }}@${{ secrets.VPS_IP_DEV }} 'cd ecofin-stack/model/dev && docker-compose --env-file .env -f docker-compose.yaml up -d'
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_ KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
